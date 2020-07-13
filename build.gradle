@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.kotlin.js' version '1.3.72'
+}
+
+group 'com.efxcode'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-js"
+    implementation npm('express')
+}
+
+kotlin.target.nodejs {
+
+}
+
+
